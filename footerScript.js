@@ -13,3 +13,11 @@ $(document).ready(function() {
     } 
   });
 });
+
+const navbarToggler = document.querySelector('.navbar-toggler');
+const navbarCollapse = document.querySelector('.navbar-collapse');
+
+navbarToggler.addEventListener('click', () => {
+  navbarToggler.classList.toggle('open');
+  navbarCollapse.classList.toggle('open');
+});
